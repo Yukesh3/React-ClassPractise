@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Navbar,NavDropdown,Nav,Form,FormControl,Button} from 'react-bootstrap'
-import Card from './five_card.jsx'
-import './five.css'
+import Card from './practise/card.js'
+import './style.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

@@ -7,20 +7,12 @@ import './Style.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const arr = [1,2,3,4]
+const arr = ['RRR', 'KGF2', 'Beast']
 
 
 root.render(
 <>
-{
-    
-        arr.filter((items)=>{
-            return <h1>{items}</h1>
-        }
-       
-        )
-    
-}
+
 
 
 <Navbar bg="light" expand="lg">
@@ -60,18 +52,15 @@ root.render(
   </Container>
 </Navbar>
   
-<ul className='cards'>
-    <Card name='Yukesh' link="https://wallpapercave.com/wp/wp5711453.jpg"/>
-    <Card/>
-
-    <Card/>
+{
     
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/> 
-    </ul>
-        
+    arr.map((items)=>{
+     return <ul><li><Card name={items} link="https://wallpapercave.com/wp/wp5711453.jpg"/></li></ul> 
+    }
+   
+    )
+
+}
    
     
 
